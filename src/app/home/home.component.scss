@@ -1,0 +1,36 @@
+img {
+    height: 80vh;
+    display: inline-block;
+}
+
+.side-container {
+    flex: 0 0 400px;
+    padding: 20px;
+}
+
+#card-description {
+    padding: 20px;
+    text-align: center;
+}
+
+.card-container {
+    flex-grow: 2;
+    margin: 25px 200px;
+    text-align: center;
+}
+
+app-dice-roller {
+    width: 250px;
+    height: 250px;
+  	margin: 0 auto;
+}
+
+.game-credits, .intro {
+  	-webkit-text-stroke: 0.5px white;
+  	-webkit-text-fill-color: #ff00e3;
+}
+
+h1 {
+  	font-weight: bold;
+    font-size: 38px;
+}

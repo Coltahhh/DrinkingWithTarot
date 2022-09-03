@@ -1,0 +1,12 @@
+<div class="flex-column">
+	<div id="dice-roller" #diceRoller></div>
+	<div class="flex-row">
+		<span>Last Value:</span>
+		<div class="growable"></div>
+		<span>{{lastValue}}</span>
+	</div>
+	<button mat-raised-button (click)="rollDice()">
+		Roll Die
+	</button>
+</div>
+

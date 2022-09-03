@@ -1,0 +1,27 @@
+<div class="flex-column">
+	<div class="flex-row">
+		<div class="side-container">
+			<div class="intro">
+				<h1>Drinking With Tarot</h1>
+				<h3>First to 5 shots win! If you go over 5 shots you die of alcohol poisoning L. Click the Tarot card to
+					begin!</h3>
+			</div>
+			<div class="game-credits">
+				<h2>Game By:</h2>
+				<p>
+					Harrison <br>
+					Noah <br>
+					Nick <br>
+					Rigoberto <br>
+				</p>
+			</div>
+		</div>
+		<div class="growable card-container">
+			<img src="{{currentCard.image}}" alt="{{currentCard.name}}" (click)=nextCard()/>
+		</div>
+		<div class="side-container flex-column">
+			<app-dice-roller></app-dice-roller>
+		</div>
+	</div>
+	<h2 id="card-description">{{currentCard.description}}</h2>
+</div>

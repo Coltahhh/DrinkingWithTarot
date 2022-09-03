@@ -1,0 +1,41 @@
+@use '@angular/material' as mat;
+
+// Adds the core styles of Angular materials
+@include mat.core();
+
+html, body { height: 100vh; }
+body {
+	margin: 0;
+	font-family: Roboto, "Helvetica Neue", sans-serif;
+	min-height: 100vh;
+}
+
+.growable {
+	flex-grow: 1;
+}
+
+.flex-row {
+	display: flex;
+	flex-flow: row nowrap;
+}
+
+.flex-column {
+	display: flex;
+	flex-flow: column;
+}
+
+$primary: mat.define-palette(mat.$yellow-palette);
+$accent: mat.define-palette(mat.$gray-palette);
+
+$dark-theme: mat.define-dark-theme((
+	color: (
+		primary: $primary,
+		accent: $accent
+	)
+));
+
+@mixin component-css($theme) {
+	@include mat.all-component-themes($theme);
+}
+
+@include component-css($dark-theme)

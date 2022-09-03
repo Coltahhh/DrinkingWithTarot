@@ -1,0 +1,20 @@
+:host {
+    display: inline-block;
+}
+
+.flex-column {
+  	height: 100%;
+  	gap: 10px;
+}
+
+#dice-roller {
+	background-color: rgba(147, 147, 147, 0.5);
+	width: 100%;
+	flex-grow: 1;
+	display: inline-block;
+	box-sizing: border-box;
+}
+
+span {
+  	font-size: 24px;
+}
